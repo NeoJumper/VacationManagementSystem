@@ -30,4 +30,22 @@ public class HelloController {
 	public String organizationalManagement() {
 		return "admin/organizational-management";
 	}
+
+
+	
+	@GetMapping("/admin/vacation-type-management")
+	public String vacationTypeManagement() {
+    return "admin/vacation-type-management";
+  }
+
+	@GetMapping("/resources/components/admin/addVacationTypeModal")
+	public String addVacationTypeModal() {
+    return "resources/components/admin/addVacationTypeModal";
+  }
+
+	@GetMapping("/admin/grant-vacation-management")
+	public String vacationGrantManagement() {
+    return "admin/grant-vacation-management";
+  }
+		
 }
